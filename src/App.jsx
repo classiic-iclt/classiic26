@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Pages/Header";
 import Nav from "./components/Nav";
 import Mascot from "./Pages/Mascot";
-import Sponsor from "./components/sponsor";
+import Sponsor from "./components/Sponsor";
 import Pendaftaran from "./Pages/Pendaftaran";
 import Footer from "./Pages/Footer";
 function App() {
