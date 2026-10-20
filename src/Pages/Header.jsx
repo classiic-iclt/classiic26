@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-[url(./assets/hero-section.png)] bg-cover  bg-no-repeat bg-center sm:h-[120vh]  mb-12">
-        <div className="w-full h-full gap-10   flex flex-col items-center pt-20 sm:pt-20 ">
+        <div className="w-full h-full gap-10   flex flex-col items-center pt-40 sm:pt-50 ">
           <img
             src={logoHeader}
             alt="Logo"
