@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Classic";
+  src: url("./assets/font/Classic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.sponsor-track {
+  animation: sponsor-scroll 10s linear infinite;
+  will-change: transform;
+}
+
+@keyframes sponsor-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-track {
+    animation: none;
+  }
+}
+@theme {
+  --animate-fluid-scale: fluid-scale 2s ease-in-out infinite;
+  --animate-mascot: mascot 2s ease-in-out infinite;
+  --color-primary-background: #151926;
+  --animate-button-hover: button-hover 1.5s ease-in-out infinite;
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes button-hover {
+    transform: translateY();
+  }
+  @keyframes fluid-scale {
+    0%,
+    100% {
+      transform: scale(1);
+      transform: translateY(0);
+    }
+    50% {
+      transform: scale(1.05);
+      transform: translateY(-10px);
+    }
+  }
+  /* 1. Define your custom keyframes */
+  @keyframes mascot {
+    0%,
+    100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Target all scrollbars globally */
+@layer base {
+  * {
+    /* For Firefox and standard CSS implementations */
+    scrollbar-width: thin;
+
+    scrollbar-color: var(--color-slate-600) var(--color-slate-100);
+
+    /* For Chrome, Safari, and Edge (WebKit engines) */
+    &::-webkit-scrollbar {
+      width: 8px; /* Width of vertical scrollbar */
+      height: 8px; /* Height of horizontal scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--color-slate-100);
+      border-radius: 9999px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-slate-400);
+      border-radius: 9999px;
+      border: 2px solid var(--color-slate-100); /* Creates padding between thumb & track */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: var(--color-slate-500);
+      transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+body {
+  font-family: "Classic", sans-serif;
+}
