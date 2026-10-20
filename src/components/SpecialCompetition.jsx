@@ -6,12 +6,10 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
   import: "default",
 });
 
-const daftarLomba = [{ nama: "Storytelling", file: "Storytelling.png" }].map(
-  (lomba) => ({
-    ...lomba,
-    image: images[`../assets/mascot-lomba/${lomba.file}`],
-  }),
-);
+const daftarLomba = [{ nama: "Akustik", file: "Akustik.png" }].map((lomba) => ({
+  ...lomba,
+  image: images[`../assets/mascot-lomba/${lomba.file}`],
+}));
 
 const SpecialCompetition = () => {
   const bgStyle = {
