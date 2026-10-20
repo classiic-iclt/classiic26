@@ -35,7 +35,7 @@ const SpecialCompetition = () => {
             }}
           />
           <motion.div
-            className="text-[#FAF7F0] text-5xl"
+            className="text-[#FAF7F0] text-2xl sm:text-5xl"
             initial={{ opacity: 0 }} // Starting state (hidden)
             whileInView={{ opacity: 1 }} // Animated state when in view
             viewport={{ once: true, amount: 0.9 }} // Options: animate once, triggers when 30% visible
