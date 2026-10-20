@@ -4,16 +4,14 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   const contacts = [
     {
-      number: "+62 895-4118-27900",
-      link: "62895411827900",
+      number: "+62 858-7755-7663",
+      link: "6285877557663",
+      nama: "Fatih Zakwan",
     },
     {
-      number: "+62 823-4075-4415",
-      link: "6282340754415",
-    },
-    {
-      number: "+62 878-1701-5749",
-      link: "6287817015749",
+      number: "+62 878-9637-4540",
+      link: "6287896374540",
+      nama: "Dzaki Khalfani",
     },
   ];
 
@@ -68,6 +66,7 @@ const Footer = () => {
                     <FaWhatsapp className="h-5 w-5 shrink-0 text-[#C5A15D] sm:h-6 sm:w-6" />
 
                     <span>{contact.number}</span>
+                    <p>({contact.nama})</p>
                   </a>
                 ))}
               </div>
