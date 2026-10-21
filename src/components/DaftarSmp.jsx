@@ -7,13 +7,43 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
 });
 
 const daftarLomba = [
-  { nama: "Storytelling", file: "Storytelling.png" },
-  { nama: "PAI", file: "Storytelling.png" },
-  { nama: "IPA", file: "Science.png" },
-  { nama: "IPS", file: "Science.png" },
-  { nama: "Matematika", file: "Science.png" },
-  { nama: "Tilawah", file: "Tilawah.png" },
-  { nama: "Tahfidz", file: "Tilawah.png" },
+  {
+    nama: "Storytelling",
+    file: "Storytelling.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdqE6V-ka9ogMZVSuHmv7GHZEHG5u7tJhdBYTsbrRfnfXcnUg/viewform?usp=header",
+    urlKarya:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdD4eCdIaFaLLZVdcGqi0v-JGm5jIqNXpjBPs-mWhZeIqYHRw/viewform?usp=header",
+  },
+  {
+    nama: "PAI",
+    file: "Storytelling.png",
+    url: "https://forms.gle/cz9XSryYK3c7agAq7",
+  },
+  {
+    nama: "IPA",
+    file: "Science.png",
+    url: "https://forms.gle/PtPNDnjtVFedzceN9",
+  },
+  {
+    nama: "IPS",
+    file: "Science.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScpTh4vvmnWuNxEPWlP4kD6K5vEid4OGaA4XTXYwmwKCxGx1w/viewform?usp=header",
+  },
+  {
+    nama: "Matematika",
+    file: "Science.png",
+    url: "https://forms.gle/k8XXdBz5nkEyBYni8",
+  },
+  {
+    nama: "Tilawah",
+    file: "Tilawah.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScftbOgSno_761hNVDf8gmwyFOmow5VBZZvRYVOhzcOj1zCpg/viewform?fbzx=224394130505531807",
+  },
+  {
+    nama: "Tahfidz",
+    file: "Tilawah.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScS_2QXHnMDDp6y_v3Px4zetb8ylriGqSW-90WnjW0GZCP_0A/viewform?usp=publish-editor",
+  },
 ].map((lomba) => ({
   ...lomba,
   image: images[`../assets/mascot-lomba/${lomba.file}`],
@@ -126,8 +156,9 @@ const Smp = () => {
                 "
               >
                 {" "}
-                <button
-                  className="
+                <a href="https://drive.google.com/drive/folders/1_Ts3znlPoaeEvBHmquvpP-CIjQ7WagZH">
+                  <button
+                    className="
                     rounded-full border border-white/70 bg-white/30 backdrop-blur-sm
                     shadow-[inset_0_1px_3px_rgba(255,255,255,0.8),0_4px_12px_rgba(80,50,20,0.15)]
                     px-4 py-2 text-xs font-bold text-[#151926]
@@ -135,11 +166,13 @@ const Smp = () => {
                     md:hover:bg-white/60 md:hover:border-white md:hover:-translate-y-1 md:hover:shadow-lg
                     active:scale-95
                   "
-                >
-                  JUKNIS
-                </button>
-                <button
-                  className="
+                  >
+                    JUKNIS
+                  </button>
+                </a>
+                <a href={lomba.url}>
+                  <button
+                    className="
                     rounded-full border border-white/70 bg-white/30 backdrop-blur-xl
                     shadow-[inset_0_1px_3px_rgba(255,255,255,0.8),0_4px_12px_rgba(80,50,20,0.15)]
                     px-4 py-2 text-xs font-bold text-[#151926]
@@ -147,9 +180,10 @@ const Smp = () => {
                     md:hover:bg-white/60 md:hover:border-white md:hover:-translate-y-1 md:hover:shadow-lg
                     active:scale-95
                   "
-                >
-                  DAFTAR
-                </button>
+                  >
+                    DAFTAR
+                  </button>
+                </a>
               </div>
             </motion.div>
           );

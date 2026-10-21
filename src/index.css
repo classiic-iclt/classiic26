@@ -27,6 +27,8 @@
   }
 }
 @theme {
+  --color-cream: #f3e7cc;
+  --color-gold: #c5a15d;
   --animate-fluid-scale: fluid-scale 2s ease-in-out infinite;
   --animate-mascot: mascot 2s ease-in-out infinite;
   --color-primary-background: #151926;
@@ -40,9 +42,17 @@
     100% {
       transform: translateX(-50%);
     }
-  }
+  } /* Ganti keyframes fluid-scale yang lama */
+
+  /* Ganti keyframes button-hover yang lama (translateY() kosong) */
   @keyframes button-hover {
-    transform: translateY();
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
   }
   @keyframes fluid-scale {
     0%,

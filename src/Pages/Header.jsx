@@ -2,11 +2,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 import logoHeader from "../assets/logo-classic-header.png";
 import Button from "../components/Button";
-import "../App";
+import heroBg from "../assets/hero-section.png";
 const Header = () => {
   return (
     <>
-      <div className="bg-[url(./assets/hero-section.png)] bg-cover  bg-no-repeat bg-center sm:h-[120vh]  mb-12">
+      <div
+        id="top"
+        className="relative min-h-screen overflow-hidden bg-[#151926] bg-cover bg-center bg-no-repeat pt-28"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
         <div className="w-full h-full gap-10   flex flex-col items-center pt-40 sm:pt-50 ">
           <img
             src={logoHeader}

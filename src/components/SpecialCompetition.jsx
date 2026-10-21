@@ -6,7 +6,13 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
   import: "default",
 });
 
-const daftarLomba = [{ nama: "Akustik", file: "Akustik.png" }].map((lomba) => ({
+const daftarLomba = [
+  {
+    nama: "Akustik",
+    file: "Akustik.png",
+    url: "https://forms.gle/B3WfUyfAE1bu7GtBA",
+  },
+].map((lomba) => ({
   ...lomba,
   image: images[`../assets/mascot-lomba/${lomba.file}`],
 }));
@@ -118,8 +124,9 @@ const SpecialCompetition = () => {
                 "
               >
                 {" "}
-                <button
-                  className="
+                <a href="https://drive.google.com/drive/folders/1_Ts3znlPoaeEvBHmquvpP-CIjQ7WagZH">
+                  <button
+                    className="
                     rounded-full border border-white/70 bg-white/30 backdrop-blur-sm
                     shadow-[inset_0_1px_3px_rgba(255,255,255,0.8),0_4px_12px_rgba(80,50,20,0.15)]
                     px-4 py-2 text-xs font-bold text-[#151926]
@@ -127,11 +134,13 @@ const SpecialCompetition = () => {
                     md:hover:bg-white/60 md:hover:border-white md:hover:-translate-y-1 md:hover:shadow-lg
                     active:scale-95
                   "
-                >
-                  JUKNIS
-                </button>
-                <button
-                  className="
+                  >
+                    JUKNIS
+                  </button>
+                </a>
+                <a href={lomba.url}>
+                  <button
+                    className="
                     rounded-full border border-white/70 bg-white/30 backdrop-blur-xl
                     shadow-[inset_0_1px_3px_rgba(255,255,255,0.8),0_4px_12px_rgba(80,50,20,0.15)]
                     px-4 py-2 text-xs font-bold text-[#151926]
@@ -139,9 +148,10 @@ const SpecialCompetition = () => {
                     md:hover:bg-white/60 md:hover:border-white md:hover:-translate-y-1 md:hover:shadow-lg
                     active:scale-95
                   "
-                >
-                  DAFTAR
-                </button>
+                  >
+                    DAFTAR
+                  </button>
+                </a>
               </div>
             </motion.div>
           );
