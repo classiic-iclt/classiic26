@@ -7,15 +7,54 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
 });
 
 const daftarLomba = [
-  { nama: "Storytelling", file: "Storytelling.png" },
-  { nama: "Badminton", file: "Badminton.png" },
-  { nama: "Futsal", file: "Bola.png" },
-  { nama: "Essay", file: "Essay.png" },
-  { nama: "Kaligrafi", file: "Kaligrafi.png" },
-  { nama: "Khitobah", file: "Khitobah.png" },
-  { nama: "Science", file: "Science.png" },
-  { nama: "Puisi", file: "Puisi.png" },
-  { nama: "Tilawah", file: "Tilawah.png" },
+  {
+    nama: "Storytelling",
+    file: "Storytelling.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdqE6V-ka9ogMZVSuHmv7GHZEHG5u7tJhdBYTsbrRfnfXcnUg/viewform?usp=header",
+    urlKarya:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdD4eCdIaFaLLZVdcGqi0v-JGm5jIqNXpjBPs-mWhZeIqYHRw/viewform?usp=header",
+  },
+  {
+    nama: "Badminton",
+    file: "Badminton.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScNSzKbbC_EQKyU6g9pNyJstTtBCsiHzw8fmk_SWt3R25yavw/viewform?usp=publish-editor",
+  },
+  {
+    nama: "Futsal",
+    file: "Bola.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfyyXHXozB7fcSf_9ZWoWGSPK8h9skSjVdScmPKPeLxQ-viLA/viewform?usp=publish-editor",
+  },
+  {
+    nama: "Essay",
+    file: "Essay.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfv7apEMU05j0zYYyLvt-dp1kgA7Ada8Z69I6B1UGIldRIn5g/viewform?usp=header",
+  },
+  {
+    nama: "Kaligrafi",
+    file: "Kaligrafi.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeLNYt6HPLXrRN8QSSWuH3OPunxstLhjjDNjjE5Rh7X7CGzFg/viewform?usp=header",
+  },
+  {
+    nama: "Khitobah",
+    file: "Khitobah.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeMlWdzf0c5fC8nn0rihXUAZIaQSIMUAhT2hVFTiJ89PoYl3g/viewform?usp=preview",
+  },
+  {
+    nama: "Science",
+    file: "Science.png",
+  },
+  {
+    nama: "Puisi",
+    file: "Puisi.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSe_tMtyuywuFkYP8rlNj8MpQefPBttkcwjjEr3VkCuDK9gc3w/viewform?usp=header",
+    urlKarya:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfg3bznQHLbccJBThaodkWxO1As_ntyUg6k1tS3vwMvZv84Sw/viewform?usp=header",
+  },
+  {
+    nama: "Tilawah",
+    file: "Tilawah.png",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScftbOgSno_761hNVDf8gmwyFOmow5VBZZvRYVOhzcOj1zCpg/viewform?fbzx=224394130505531807",
+  },
 ].map((lomba) => ({
   ...lomba,
   image: images[`../assets/mascot-lomba/${lomba.file}`],
@@ -140,8 +179,9 @@ const Sma = () => {
                 >
                   JUKNIS
                 </button>
-                <button
-                  className="
+                <a href={lomba.url}>
+                  <button
+                    className="
                     rounded-full border border-white/70 bg-white/30 backdrop-blur-xl
                     shadow-[inset_0_1px_3px_rgba(255,255,255,0.8),0_4px_12px_rgba(80,50,20,0.15)]
                     px-4 py-2 text-xs font-bold text-[#151926]
@@ -149,9 +189,10 @@ const Sma = () => {
                     md:hover:bg-white/60 md:hover:border-white md:hover:-translate-y-1 md:hover:shadow-lg
                     active:scale-95
                   "
-                >
-                  DAFTAR
-                </button>
+                  >
+                    DAFTAR
+                  </button>
+                </a>
               </div>
             </motion.div>
           );
