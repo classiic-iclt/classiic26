@@ -8,7 +8,7 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
 
 const daftarLomba = [
   {
-    nama: "Storytelling",
+    nama: "Speech",
     file: "Storytelling.png",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSdqE6V-ka9ogMZVSuHmv7GHZEHG5u7tJhdBYTsbrRfnfXcnUg/viewform?usp=header",
     urlKarya:
@@ -39,10 +39,7 @@ const daftarLomba = [
     file: "Khitobah.png",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSeMlWdzf0c5fC8nn0rihXUAZIaQSIMUAhT2hVFTiJ89PoYl3g/viewform?usp=preview",
   },
-  {
-    nama: "Science",
-    file: "Science.png",
-  },
+
   {
     nama: "Puisi",
     file: "Puisi.png",

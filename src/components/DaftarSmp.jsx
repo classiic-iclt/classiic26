@@ -8,7 +8,6 @@ const images = import.meta.glob("../assets/mascot-lomba/*.png", {
 
 const daftarLomba = [
   { nama: "Storytelling", file: "Storytelling.png" },
-  { nama: "Language", file: "Storytelling.png" },
   { nama: "PAI", file: "Storytelling.png" },
   { nama: "IPA", file: "Science.png" },
   { nama: "IPS", file: "Science.png" },
