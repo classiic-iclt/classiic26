@@ -19,8 +19,9 @@ function App() {
         <Mascot />
 
         <Sponsor />
-
-        <Pendaftaran />
+        <div id="pendaftaran">
+          <Pendaftaran />
+        </div>
         <Footer />
       </div>
     </>

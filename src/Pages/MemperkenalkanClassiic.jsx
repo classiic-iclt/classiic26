@@ -22,10 +22,10 @@ const acronym = [
 ];
 
 const stats = [
-  ["19", "Mata Lomba"],
+  ["16", "Mata Lomba"],
   ["1000+", "Peserta"],
   ["3", "Provinsi"],
-  ["7", "Milad MAN IC Lotim"],
+  ["9", "Milad MAN IC Lotim"],
 ];
 
 export default function MemperkenalkanClassiic() {

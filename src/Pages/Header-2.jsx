@@ -45,7 +45,7 @@ export default function Header() {
           <motion.div variants={item} className="mb-8 flex items-center gap-4">
             <span className="h-px w-10 bg-[#C5A15D]/60" />
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#C5A15D]">
-              ✦ &nbsp; Milad MAN IC Lombok Timur ke-7 &nbsp; ✦
+              ✦ &nbsp; Milad MAN IC Lombok Timur ke-9 &nbsp; ✦
             </p>
           </motion.div>
 
