@@ -10,9 +10,9 @@ const daftarLomba = [
   {
     nama: "Speech",
     file: "Storytelling.png",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSdqE6V-ka9ogMZVSuHmv7GHZEHG5u7tJhdBYTsbrRfnfXcnUg/viewform?usp=header",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdggny-6I9zXpwu18W-Tag2IL83o9nGrScumMsR1nb-QLlx6A/viewform",
     urlKarya:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdD4eCdIaFaLLZVdcGqi0v-JGm5jIqNXpjBPs-mWhZeIqYHRw/viewform?usp=header",
+      "https://docs.google.com/forms/d/e/1FAIpQLSdggny-6I9zXpwu18W-Tag2IL83o9nGrScumMsR1nb-QLlx6A/viewform",
   },
   {
     nama: "Badminton",
