@@ -133,26 +133,6 @@ export default function MemperkenalkanClassiic() {
             ))}
           </motion.div>
         </div>
-
-        <div className="relative flex items-center justify-center lg:col-span-5">
-          <div className="pointer-events-none absolute flex items-center justify-center">
-            <div className="h-64 w-64 rounded-full border border-[#C5A15D]/20 sm:h-80 sm:w-80" />
-            <div className="absolute h-48 w-48 rounded-full border border-[#C5A15D]/10 sm:h-60 sm:w-60" />
-          </div>
-          <motion.img
-            src={mascot}
-            alt="Gatca"
-            initial={reduce ? false : { opacity: 0, scale: 0.92 }}
-            whileInView={reduce ? {} : { opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="relative z-10 w-full max-w-[320px] object-contain sm:max-w-[380px]"
-            loading="lazy"
-          />
-          <p className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap text-[9px] uppercase tracking-[0.3em] text-[#C5A15D]/60">
-            Siyoon — Maskot CLASSIIC
-          </p>
-        </div>
       </div>
     </section>
   );

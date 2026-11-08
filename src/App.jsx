@@ -17,7 +17,6 @@ function App() {
         <Header2 />
         <MemperkenalkanClassiic />
         <Mascot />
-
         <Sponsor />
         <div id="pendaftaran">
           <Pendaftaran />
