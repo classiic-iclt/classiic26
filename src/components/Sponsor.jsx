@@ -15,13 +15,21 @@ const sponsorAssets = import.meta.glob(
 
 // Perhatikan trailing underscore — sesuai folder aslinya
 const TIER_FOLDERS = {
-  platinum: "PLATINUM_",
-  gold: "GOLD_",
-  silver: "SILVER_",
-  bronze: "BRONZE_",
-  alternative: "ALTERNATIF_",
-  diamond: "DIAMOND_",
+  platinum: "PLATINUM",
+  gold: "GOLD",
+  silver: "SILVER",
+  bronze: "BRONZE",
+  alternative: "ALTERNATIVE",
+  diamond: "DIAMOND",
 };
+if (import.meta.env.DEV) {
+  console.log(
+    "[PLATINUM PATHS]",
+    Object.keys(sponsorAssets).filter((path) =>
+      path.toLowerCase().includes("platinum"),
+    ),
+  );
+}
 
 const getSponsorLogos = (tier) => {
   const folder = TIER_FOLDERS[tier];
